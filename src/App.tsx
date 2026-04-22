@@ -8,6 +8,7 @@ import FoodTracking from "./pages/FoodTracking";
 import Activity from "./pages/Activity";
 import Progress from "./pages/Progress";
 import Profile from "./pages/Profile";
+import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/activity" element={<Activity />} />
           <Route path="/progress" element={<Progress />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/auth" element={<Auth />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
